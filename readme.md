@@ -9,3 +9,7 @@ Terminal Commands
   - Runs the spring boot application
   - Requires mvn (Maven), which you can download via brew install maven
 
+
+API Calls
+- API calls are made to the controller via some kind of API software (e.g., Postman, Bruno, Insomnia.)
+- Match up the HTTP Call type (e.g., POST,GET), Body content (E.g., JSON) and click Send. You'll get a 200 when the request is successful. 
