@@ -27,8 +27,12 @@ public class DepartmentController {
     @GetMapping("/departments/{id}")
     public Department fetchDepartmentById(@PathVariable("id") Long id) {
         return departmentService.fetchDepartmentById(id);
+    }
 
-
+    @PutMapping("/departments/{id}")
+    public Department updateDepartment(@PathVariable("id") Long id,
+                                       @RequestBody Department department) {
+        return departmentService.updateDepartment(id, department);
     }
 
 }
